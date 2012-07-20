@@ -1,0 +1,1 @@
+pref("extensions.prowlingfirefox.autorun", false);

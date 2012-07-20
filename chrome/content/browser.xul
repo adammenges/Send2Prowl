@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://prowlingfirefox/skin/skin.css" type="text/css"?> 
+<!DOCTYPE prowlingfirefox SYSTEM "chrome://prowlingfirefox/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script src="prowlingFireFox.js" />
+		
+		<menupopup id="menu_ToolsPopup"> 
+			<menuitem label="&runprowlingfirefox;" key="prowling-fire-fox-run-key" oncommand="prowlingFireFox.run()"/> 
+		</menupopup>
+		
+		<keyset>
+			<key id="prowling-fire-fox-run-key" modifiers="accel alt shift" key="L" oncommand="prowlingFireFox.run()"/>
+		</keyset>
+		
+		<statusbar id="status-bar">
+			<statusbarpanel id="prowling-fire-fox-status-bar-icon" class="statusbarpanel-iconic" src="chrome://prowlingfirefox/skin/status-bar.png" tooltiptext="&runprowlingfirefox;" onclick="prowlingFireFox.run()" />
+		</statusbar>
+		
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="prowling-fire-fox-toolbar-button" label="Prowing FireFox" tooltiptext="&runprowlingfirefox;" oncommand="prowlingFireFox.run()"/>
+		</toolbarpalette>
+</overlay>

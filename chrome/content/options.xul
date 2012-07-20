@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<prefwindow 
+     title="Send2Prowl Preferences"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ 
+	<prefpane label="Send2Prowl Preferences">
+		<preferences>
+			<preference id="prowling-fire-fox-autorun" name="extensions.prowlingfirefox.autorun" type="bool"/>
+			<preference id="prowling-fire-fox-api" name="extensions.prowlingfirefox.api" type="string"/>
+		</preferences>
+		
+		<groupbox>
+			<caption label="Settings"/>
+			<grid>
+				<columns>
+					<column flex="4"/>
+					<column flex="1"/>
+				</columns>
+				<rows>
+					<row>
+						<label control="api" value="API Code: "/>
+						<textbox id="prowling-fire-fox-api" preference="prowling-fire-fox-api"/>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>	
+		
+	</prefpane>
+ 
+</prefwindow>
