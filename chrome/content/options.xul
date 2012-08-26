@@ -3,8 +3,9 @@
  
 <prefwindow 
      title="Send2Prowl Preferences"
-     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
- 
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+     id="basic-config-dialog">
+     
 	<prefpane label="Send2Prowl Preferences">
 		<preferences>
 			<preference id="prowling-fire-fox-autorun" name="extensions.prowlingfirefox.autorun" type="bool"/>

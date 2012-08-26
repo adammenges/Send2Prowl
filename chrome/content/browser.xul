@@ -12,10 +12,6 @@
 			<key id="prowling-fire-fox-run-key" modifiers="accel alt shift" key="L" oncommand="prowlingFireFox.run()"/>
 		</keyset>
 		
-		<statusbar id="status-bar">
-			<statusbarpanel id="prowling-fire-fox-status-bar-icon" class="statusbarpanel-iconic" src="chrome://prowlingfirefox/skin/status-bar.png" tooltiptext="&runprowlingfirefox;" onclick="prowlingFireFox.run()" />
-		</statusbar>
-		
 		<toolbarpalette id="BrowserToolbarPalette">
 			<toolbarbutton id="prowling-fire-fox-toolbar-button" label="Prowing FireFox" tooltiptext="&runprowlingfirefox;" oncommand="prowlingFireFox.run()"/>
 		</toolbarpalette>

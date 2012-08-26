@@ -2,11 +2,6 @@
 	list-style-image: url("chrome://prowlingfirefox/skin/toolbar-large.png");
 }
 
-#prowling-fire-fox-status-bar-icon {
-	width: 83px;
-	margin: 0 5px;
-}
-
 .prowling-fire-fox-selected {
 	outline: 2px solid red !important;
 }
