@@ -1,14 +1,11 @@
-//
-// Special thanks to Eric Lammerts (lammerts.org) for his help.
-//
+// Special thanks to Eric Lammerts (lammerts.org) and Adam Menges for their help.
 
-
-var prowlingFireFox = function () {
+var fox2iphone = function () {
 	var prefManager = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 	return {
 		init : function () {
 			gBrowser.addEventListener("load", function () {
-				var autoRun = prefManager.getCharPref("extensions.prowlingfirefox.autorun");
+				var autoRun = prefManager.getCharPref("extensions.fox2iphone.autorun");
 				if (!autoRun) {
 					// put alert here, if needed.
 				}
@@ -21,10 +18,10 @@ var prowlingFireFox = function () {
 					if (req.readyState == 1) {
 						var url = window.top.getBrowser().selectedBrowser.contentWindow.location.href;
 						var title = window.top.getBrowser().selectedBrowser.contentDocument.title;
-						var api = prefManager.getCharPref("extensions.prowlingfirefox.api");
+						var api = prefManager.getCharPref("extensions.fox2iphone.api");
 
 						var params = 'apikey='+ api +
-						     '&application='+ "Send2Prowl" +
+						     '&application='+ "Fox2iPhone" +
 						     '&event='+ escape(title) +
 						     '&url='+ escape(url) +
 						     '&description='+ escape(url);
@@ -49,6 +46,6 @@ var prowlingFireFox = function () {
 		}
 	};
 }();
-window.addEventListener("load", prowlingfirefox.init, false);
+window.addEventListener("load", fox2iphone.init, false);
 
 

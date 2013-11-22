@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="chrome://prowlingfirefox/skin/skin.css" type="text/css"?> 
-<!DOCTYPE prowlingfirefox SYSTEM "chrome://prowlingfirefox/locale/translations.dtd">
+<?xml-stylesheet href="chrome://fox2iphone/skin/skin.css" type="text/css"?> 
+<!DOCTYPE fox2iphone SYSTEM "chrome://fox2iphone/locale/translations.dtd">
 <overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-		<script src="prowlingFireFox.js" />
+		<script src="fox2iphone.js" />
 		
 		<menupopup id="menu_ToolsPopup"> 
-			<menuitem label="&runprowlingfirefox;" key="prowling-fire-fox-run-key" oncommand="prowlingFireFox.run()"/> 
+			<menuitem label="&runfox2iphone;" key="fox2iphone-run-key" oncommand="fox2iphone.run()"/> 
 		</menupopup>
 		
 		<keyset>
-			<key id="prowling-fire-fox-run-key" modifiers="accel alt shift" key="L" oncommand="prowlingFireFox.run()"/>
+			<key id="fox2iphone-run-key" modifiers="accel alt shift" key="L" oncommand="fox2iphone.run()"/>
 		</keyset>
 		
 		<toolbarpalette id="BrowserToolbarPalette">
-			<toolbarbutton id="prowling-fire-fox-toolbar-button" label="Prowing FireFox" tooltiptext="&runprowlingfirefox;" oncommand="prowlingFireFox.run()"/>
+			<toolbarbutton id="fox2iphone-toolbar-button" label="Fox2iPhone" tooltiptext="&runfox2iphone;" oncommand="fox2iphone.run()"/>
 		</toolbarpalette>
 </overlay>

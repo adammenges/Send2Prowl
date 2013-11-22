@@ -1,7 +1,7 @@
-#prowling-fire-fox-toolbar-button {
-	list-style-image: url("chrome://prowlingfirefox/skin/toolbar.png");
+#fox2iphone-toolbar-button {
+	list-style-image: url("chrome://fox2iphone/skin/prowl24.png");
 }
 
-.prowling-fire-fox-selected {
+.fox2iphone-selected {
 	outline: 2px solid red !important;
 }

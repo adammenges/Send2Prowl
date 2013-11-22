@@ -1,8 +1,8 @@
-content     prowlingfirefox    chrome/content/
-content     prowlingfirefox    chrome/content/ contentaccessible=yes
-overlay chrome://browser/content/browser.xul chrome://prowlingfirefox/content/browser.xul
+content     fox2iphone    chrome/content/
+content     fox2iphone    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://fox2iphone/content/browser.xul
 
-locale	prowlingfirefox	en-US	locale/en-US/
+locale	fox2iphone	en-US	locale/en-US/
 
-skin	prowlingfirefox	classic/1.0	skin/
-style	chrome://global/content/customizeToolbar.xul	chrome://prowlingfirefox/skin/skin.css
+skin	fox2iphone	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://fox2iphone/skin/skin.css
