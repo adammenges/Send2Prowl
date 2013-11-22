@@ -3,20 +3,20 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 	<Description about="urn:mozilla:install-manifest">
-		<em:id>hwtdisc@gmail.com</em:id>
+        <em:id>{9AE27B58-539E-11E3-B116-5F9A6188709B}</em:id>
 		<em:name>Fox2iPhone</em:name>
 		<em:version>1.0</em:version>
 		<em:type>2</em:type>
-		<em:creator>Devicifer and Adam Menges</em:creator>
+		<em:creator>Devicifer</em:creator>
 		<em:description>This extension, combined with the iOS Prowl app, will enable you to quickly send URL's to your iPhone/iPad/iPod Touch in a single click!</em:description>
-		<em:homepageURL>https://github.com/TimeToFixStuff</em:homepageURL>
+		<em:homepageURL>https://github.com/TimeToFixStuff/Fox2iPhone</em:homepageURL>
 		<em:optionsURL>chrome://fox2iphone/content/options.xul</em:optionsURL>
 
 		<em:targetApplication>
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 				<em:minVersion>2.0</em:minVersion>
-				<em:maxVersion>50.*</em:maxVersion>
+				<em:maxVersion>27.*</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 	</Description>      

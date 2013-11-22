@@ -46,6 +46,20 @@ var fox2iphone = function () {
 		}
 	};
 }();
+
+Application.getExtensions(function (extensions) {
+    if (extensions.get("{9AE27B58-539E-11E3-B116-5F9A6188709B}").firstRun) {
+        var toolbar = document.getElementById("nav-bar");
+        toolbar.insertItem("fox2iphone-toolbar-button", toolbar.lastChild);
+        toolbar.setAttribute("currentset", toolbar.currentSet);
+        document.persist(toolbar.id, "currentset");
+        toolbar.collapsed = false;
+        
+        window.open(
+            "chrome://fox2iphone/content/options.xul",
+            "fox2iphone-window",
+            "chrome,centerscreen");
+    }
+});
+
 window.addEventListener("load", fox2iphone.init, false);
-
-

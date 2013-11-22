@@ -1,5 +1,21 @@
 #fox2iphone-toolbar-button {
-	list-style-image: url("chrome://fox2iphone/skin/prowl24.png");
+    list-style-image: url("chrome://fox2iphone/skin/prowl24.png");
+}
+
+#prowl16 {
+    list-style-image: url("chrome://fox2iphone/skin/prowl16.png");
+}
+
+#prowl24 {
+    list-style-image: url("chrome://fox2iphone/skin/prowl24.png");
+}
+
+#prowl32 {
+    list-style-image: url("chrome://fox2iphone/skin/prowl32.png");
+}
+
+#prowl64 {
+    list-style-image: url("chrome://fox2iphone/skin/prowl64.png");
 }
 
 .fox2iphone-selected {

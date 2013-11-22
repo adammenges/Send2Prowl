@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
  
-<prefwindow 
+<prefwindow
      title="Fox2iPhone Preferences"
      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
      id="basic-config-dialog">
@@ -13,17 +13,34 @@
 		</preferences>
 		
 		<groupbox>
-			<caption label="Settings"/>
+			<caption label="Fox2iPhone Settings"/>
 			<grid>
 				<columns>
 					<column flex="4"/>
 					<column flex="1"/>
 				</columns>
-				<rows>
-					<row>
-						<label control="api" value="API Code: "/>
-						<textbox id="fox2iphone-api" preference="fox2iphone-api"/>
-					</row>
+                <rows>
+                    <row>
+                        <label control="api" value=" "/>
+                    </row>
+                    <row>
+                        <label control="api" value="Go to prowlapp.com and sign up or login. They will give you an API Code."/>
+                    </row>
+                    <row>
+                        <label control="api" value=" "/>
+                    </row>
+                    <row>
+                        <label control="api" value="You can just move this window off to the side for now."/>
+                    </row>
+                    <row>
+                        <label control="api" value=" "/>
+                    </row>
+                    <row>
+                        <label control="api" value="Enter your prowlapp.com API Code: "/>
+                    </row>
+                    <row>
+                        <textbox id="fox2iphone-api" preference="fox2iphone-api"/>
+                    </row>
 				</rows>
 			</grid>
 		</groupbox>	
