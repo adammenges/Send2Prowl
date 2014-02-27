@@ -11,20 +11,20 @@ var fox2iphone = function () {
 				}
 			}, false);
 		},
-			
+
 		run : function () {
 				var req = new XMLHttpRequest();
 				req.onreadystatechange = function(){
 					if (req.readyState == 1) {
-						var url = window.top.getBrowser().selectedBrowser.contentWindow.location.href;
+                        var url = encodeURIComponent(window.top.getBrowser().selectedBrowser.contentWindow.location.href);
 						var title = window.top.getBrowser().selectedBrowser.contentDocument.title;
 						var api = prefManager.getCharPref("extensions.fox2iphone.api");
 
 						var params = 'apikey='+ api +
 						     '&application='+ "Fox2iPhone" +
 						     '&event='+ escape(title) +
-						     '&url='+ escape(url) +
-						     '&description='+ escape(url);
+                             '&url='+ url +
+                             '&description='+ url;
 
 						req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 						req.send(params);
@@ -42,7 +42,7 @@ var fox2iphone = function () {
 						}
 					}
 				};
-				req.open('POST', 'https://prowlapp.com/publicapi/add', true);
+                req.open('POST', 'https://api.prowlapp.com/publicapi/add', true);
 		}
 	};
 }();
@@ -54,7 +54,7 @@ Application.getExtensions(function (extensions) {
         toolbar.setAttribute("currentset", toolbar.currentSet);
         document.persist(toolbar.id, "currentset");
         toolbar.collapsed = false;
-        
+
         window.open(
             "chrome://fox2iphone/content/options.xul",
             "fox2iphone-window",

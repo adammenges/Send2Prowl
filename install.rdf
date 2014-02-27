@@ -5,7 +5,7 @@
 	<Description about="urn:mozilla:install-manifest">
         <em:id>{9AE27B58-539E-11E3-B116-5F9A6188709B}</em:id>
 		<em:name>Fox2iPhone</em:name>
-		<em:version>1.0</em:version>
+		<em:version>1.1</em:version>
 		<em:type>2</em:type>
 		<em:creator>Devicifer</em:creator>
 		<em:description>This extension, combined with the iOS Prowl app, will enable you to quickly send URL's to your iPhone/iPad/iPod Touch in a single click!</em:description>
@@ -19,5 +19,5 @@
 				<em:maxVersion>27.*</em:maxVersion>
 			</Description>
 		</em:targetApplication>
-	</Description>      
+	</Description>
 </RDF>
