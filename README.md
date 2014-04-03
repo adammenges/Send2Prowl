@@ -1,4 +1,4 @@
-Send2Prowl
+Fox2iPhone
 ==========
 
-This extension lives in your tool bar, when clicked simply pushes the current webpage's URL to your iPhone/iPad via Prowl. Similar to the Chrome-to-Android Service. I made this extension because there wasn't one avaliable for Firefox, and I wanted one. Completely free and open source, use for whatever you like -- go ahead and steal it. You can view more information on Prowl's website: [http://www.prowlapp.com/apps.php](http://www.prowlapp.com/apps.php)
+This extension, combined with the iOS Prowl app, will enable you to quickly send URL's to your iPhone/iPad/iPod Touch in a single click! Prowl's website: [http://www.prowlapp.com](http://www.prowlapp.com)

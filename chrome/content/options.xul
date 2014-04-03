@@ -1,29 +1,46 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
  
-<prefwindow 
-     title="Send2Prowl Preferences"
+<prefwindow
+     title="Fox2iPhone Preferences"
      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
      id="basic-config-dialog">
      
-	<prefpane label="Send2Prowl Preferences">
+	<prefpane label="Fox2iPhone Preferences">
 		<preferences>
-			<preference id="prowling-fire-fox-autorun" name="extensions.prowlingfirefox.autorun" type="bool"/>
-			<preference id="prowling-fire-fox-api" name="extensions.prowlingfirefox.api" type="string"/>
+			<preference id="fox2iphone-autorun" name="extensions.fox2iphone.autorun" type="bool"/>
+			<preference id="fox2iphone-api" name="extensions.fox2iphone.api" type="string"/>
 		</preferences>
 		
 		<groupbox>
-			<caption label="Settings"/>
+			<caption label="Fox2iPhone Settings"/>
 			<grid>
 				<columns>
 					<column flex="4"/>
 					<column flex="1"/>
 				</columns>
-				<rows>
-					<row>
-						<label control="api" value="API Code: "/>
-						<textbox id="prowling-fire-fox-api" preference="prowling-fire-fox-api"/>
-					</row>
+                <rows>
+                    <row>
+                        <label control="api" value=" "/>
+                    </row>
+                    <row>
+                        <label control="api" value="Go to prowlapp.com and sign up or login. They will give you an API Code."/>
+                    </row>
+                    <row>
+                        <label control="api" value=" "/>
+                    </row>
+                    <row>
+                        <label control="api" value="You can just move this window off to the side for now."/>
+                    </row>
+                    <row>
+                        <label control="api" value=" "/>
+                    </row>
+                    <row>
+                        <label control="api" value="Enter your prowlapp.com API Code: "/>
+                    </row>
+                    <row>
+                        <textbox id="fox2iphone-api" preference="fox2iphone-api"/>
+                    </row>
 				</rows>
 			</grid>
 		</groupbox>	

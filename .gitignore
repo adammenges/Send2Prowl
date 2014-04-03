@@ -17,6 +17,7 @@
 *.rar
 *.tar
 *.zip
+*.xpi
 
 # Logs and databases #
 ######################
@@ -28,9 +29,14 @@
 ######################
 .DS_Store
 .DS_Store?
+.directory
 ._*
 .Spotlight-V100
 .Trashes
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Other Stuff #
+###############
+test.sh

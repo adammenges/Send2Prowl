@@ -1,1 +1,1 @@
-pref("extensions.prowlingfirefox.autorun", false);
+pref("extensions.fox2iphone.autorun", false);
